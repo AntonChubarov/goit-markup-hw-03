@@ -1,11 +1,11 @@
 :root {
-  --navy-blue: #2E2F42;
-  --iris: #4D5AE5;
-  --cloud: #F4F4FD;
-  --cornflower: #E7E9FC;
-  --ocean: #404BBF;
-  --white-background: #FFFFFF;
-  --white-text: #FFFFFF;
+  --navy-blue: #2e2f42;
+  --iris: #4d5ae5;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --ocean: #404bbf;
+  --white-background: #ffffff;
+  --white-text: #ffffff;
   --slate: #434455;
 }
 
@@ -23,12 +23,42 @@ a {
   letter-spacing: 0.02em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
 *:focus {
   outline: none;
+}
+
+.container {
+  max-width: 1128px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 
 .logo {
