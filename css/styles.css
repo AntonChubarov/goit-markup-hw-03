@@ -55,13 +55,15 @@ img {
 
 header {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
+  max-width: 1156px;
+  padding-left: 14px;
+  padding-right: 14px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,6 +71,7 @@ header {
 #header-container {
   display: flex;
   justify-content: space-between;
+  gap: 76px;
 }
 
 #header-container > nav {
@@ -101,7 +104,9 @@ header {
 
 .addresses-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
+  row-gap: 0;
 }
 
 .nav-link:hover,
@@ -185,7 +190,7 @@ header {
 }
 
 .advantages-list-item {
-  width: 264px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-list-item-title {
@@ -219,6 +224,14 @@ header {
   margin-top: 72px;
 }
 
+.work-types-list-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.work-types-list-item > img {
+  max-width: 100%;
+}
+
 .team-section {
   background-color: var(--cloud);
   padding: 120px 0;
@@ -234,6 +247,11 @@ header {
 .team-list-item {
   background-color: var(--white-background);
   padding-bottom: 32px;
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-list-item > img {
+  max-width: 100%;
 }
 
 .team-member-name {
@@ -290,10 +308,24 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 72px;
+  row-gap: 32px;
 }
 
 .project-list-item {
-  padding-bottom: 32px;
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.project-list-item > a > img {
+  max-width: 100%;
+}
+
+.project-list-info {
+  box-sizing: border-box;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: var(--cornflower);
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .project-name {
@@ -301,16 +333,15 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   font-weight: 500;
-  margin-top: 32px;
   margin-bottom: 8px;
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 .project-type {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 /*endregion*/
