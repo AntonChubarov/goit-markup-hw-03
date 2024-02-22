@@ -53,12 +53,34 @@ img {
   outline: none;
 }
 
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .container {
-  max-width: 1128px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 156px;
-  margin-right: 156px;
+  max-width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-container > nav {
+  display: flex;
+}
+
+.navigation-tabs {
+  display: flex;
+}
+
+.addresses-list {
+  display: flex;
 }
 
 .logo {
@@ -114,7 +136,12 @@ img {
 
 .order-section {
   background-color: var(--navy-blue);
+  padding-top: 188px;
 }
+
+/*#order-container {*/
+/*  justify-content: center;*/
+/*}*/
 
 .slogan {
   color: var(--white-text);
@@ -133,11 +160,23 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  margin: 0 auto 0 auto;
+  display: block;
 }
 
 .order-service-button:hover,
 .order-service-button:focus {
   background-color: var(--ocean);
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages-list-item {
+  width: 264px;
 }
 
 .advantages-list-item-title {
@@ -161,8 +200,20 @@ img {
   text-align: center;
 }
 
+.work-types-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .team-section {
   background-color: var(--cloud);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-member-name {
@@ -184,6 +235,11 @@ img {
 
 /*region Portfolio Styles*/
 
+.filter-buttons-list {
+  display: flex;
+  justify-content: center;
+}
+
 .filter-button {
   background-color: var(--cloud);
   color: var(--iris);
@@ -199,6 +255,12 @@ img {
 .filter-button:focus {
   background-color: var(--ocean);
   color: var(--white-text);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-name {
